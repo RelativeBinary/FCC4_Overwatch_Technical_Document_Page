@@ -1,4 +1,12 @@
-#sidenav {
+hr {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #32728f;
+    width: 80%;
+}
+
+#nav-bar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: black;
     height: 100vh;
     width: 240px;
@@ -7,16 +15,50 @@
     color: white;
 }
 
-#sidenav h4 {
+#nav-bar h4 {
     display: flex;
     justify-content: center;
 }
 
+#nav-bar li {
+    width: 240px;
+}
+
+#nav-bar li:hover {
+    background-color: white;
+}
+
 .main {
+    background-color: #003850;
     margin-left: 240px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #32728f;
+    background-color: #003045;
+    color: white;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.section div {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: -4px;
+    padding: 12px;
+    justify-content: center;
+    background-color: #00202e;
     height: 100%;
-    background-color: blue;
 }
