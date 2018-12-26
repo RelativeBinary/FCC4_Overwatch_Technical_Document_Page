@@ -1,0 +1,22 @@
+#sidenav {
+    background-color: black;
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    color: white;
+}
+
+#sidenav h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin-left: 240px;
+}
+
+.section {
+    height: 100%;
+    background-color: blue;
+}
