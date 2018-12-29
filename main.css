@@ -5,8 +5,12 @@ hr {
     width: 80%;
 }
 
+div {
+    margin: auto;
+}
+
 #nav-bar {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     background-color: black;
     height: 100vh;
     width: 240px;
@@ -18,6 +22,7 @@ hr {
 #nav-bar h4 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 #nav-bar li {
@@ -29,6 +34,7 @@ hr {
 }
 
 .main {
+    margin: auto;
     background-color: #003850;
     margin-left: 240px;
     padding-left: 40px;
@@ -36,7 +42,8 @@ hr {
 }
 
 .section {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     border-width: 1px;
     border-style: solid;
     border-color: #32728f;
