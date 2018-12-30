@@ -41,7 +41,7 @@ div {
     padding-right: 40px;
 }
 
-.section {
+.main-section {
     max-width: 800px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     border-width: 1px;
@@ -55,12 +55,12 @@ div {
     flex-direction: column;
 }
 
-.section h4 {
+.main-section h4 {
     display: flex;
     justify-content: center;
 }
 
-.section div {
+.main-section div {
     margin-left: 4px;
     margin-right: 4px;
     margin-top: -4px;
@@ -68,4 +68,22 @@ div {
     justify-content: center;
     background-color: #00202e;
     height: 100%;
+}
+
+#sup-drop {
+    display: none;
+    padding-left: 8px;
+    color: white;
+}
+
+#dps-drop {
+    display: none;
+    padding-left: 8px;
+    color: white;
+}
+
+#tank-drop {
+    display: none;
+    padding-left: 8px;
+    color: white;
 }

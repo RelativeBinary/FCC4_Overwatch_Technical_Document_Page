@@ -34,18 +34,35 @@
                 <h4>Overwatch <br> Guide </h4>
                 <hr>
                 <li> <a class="nav-link" href="#home"> Home </a> </li><br>
-                <li> <a class="nav-link" href="#tanks"> Tanks </a> </li><br>
-                <li> <a class="nav-link" href="#dps"> DPS </a> </li><br>
-                <li> <a class="nav-link" href="#support"> Support </a> </li><br>
+                <li> <a class="nav-link" href="#tanks" onclick="supDrop(0)"> Tanks </a> </li><br>
+                <div id="tank-drop">
+                    <a href="#">sample</a>
+                    <a href="#">sample</a>
+                    <a href="#">sample</a>
+                </div>
+                <li> <a class="nav-link" href="#dps" onclick="supDrop(1)"> DPS </a> </li><br>
+                <div id="dps-drop">
+                    <a href="#">sample</a>
+                    <a href="#">sample</a>
+                    <a href="#">sample</a>
+                </div>
+                <li> <a class="nav-link" href="#support" onclick="supDrop(2)"> Support </a> </li><br>
+                <div id="sup-drop">
+                    <a href="#">sample</a>
+                    <a href="#">sample</a>
+                    <a href="#">sample</a>
+                </div>
             </ul>
         </nav>
     </header>
-    <div class="main">
+    <main id="main-doc" class="main">
         <table>
             <tr>
                 <td align="center">
-                    <div id="home" class="section">
-                        <h4> Content </h4>
+                    <section id="content" class="main-section">
+                        <header>
+                            <h4> Content </h4>
+                        </header>
                         <hr>
                         <div id="home-blurb">
                             TL;DR: Here you can find tactics and conceptual countering tips you can use, rather than screaming at your team. This information is primarily from <a target="_blank" href="https://www.youtube.com/channel/UCEzOHrh9snmHJSGu9wmOvsw">Your
@@ -66,38 +83,55 @@
                             <br> <br> Overall, I hope this guide will be of use for many Overwatch players who are looking to improve their game skill little by little.
 
                         </div>
-                    </div>
+                    </section>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div id="tanks" class="section">
-                        <h4 id="home-header"> Tanks! </h4>
+                    <section id="tanks" class="main-section">
+                        <header>
+                            <h4> Tanks </h4>
+                        </header>
                         <hr>
-                        <div id="home-blurb">Group Up With Me!</div>
-                    </div>
+                        <div>Group Up With Me!</div>
+                    </section>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div id="dps" class="section">
-                        <h4 id="home-header"> DPS! </h4>
+                    <section id="dps" class="main-section">
+                        <header>
+                            <h4> DPS </h4>
+                        </header>
                         <hr>
-                        <div id="home-blurb">I Need Healing! REEE</div>
-                    </div>
+                        <div>I Need Healing! REEE</div>
+                    </section>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div id="support" class="section">
-                        <h4 id="home-header"> Support! </h4>
+                    <section id="dps" class="main-section">
+                        <header>
+                            <h4> DPS </h4>
+                        </header>
                         <hr>
-                        <div id="home-blurb">Whether you're flex-support or main-support you'll need to play smart to keep your team and yourself alive when it counts!</div>
-                    </div>
+                        <div>I Need Healing! REEE</div>
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <section id="support" class="main-section">
+                        <header>
+                            <h4> Support </h4>
+                        </header>
+                        <hr>
+                        <div>Whether you're flex-support or main-support you'll need to play smart to keep your team and yourself alive when it counts!</div>
+                    </section>
                 </td>
             </tr>
         </table>
-    </div>
+    </main>
 </body>
 
 </html>
