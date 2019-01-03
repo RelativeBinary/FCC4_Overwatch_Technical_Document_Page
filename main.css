@@ -1,3 +1,11 @@
+div {
+    font-size: 16px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
 hr {
     border-width: 1px;
     border-style: solid;

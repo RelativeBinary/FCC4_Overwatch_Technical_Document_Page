@@ -41,21 +41,59 @@ console.log("created tanks var");
 tanks.push({
     id: "001",
     name: "D.VA",
-    type: "tank",
-    intro: "D.Va’s mech is nimble and powerful—its twin Fusion Cannons blast away with autofire at short range, and she can use its Boosters to barrel over enemies and obstacles, or deflect attacks with her projectile-dismantling Defense Matrix.",
-    abilities: [
-        { "ab-id": "001", "ab-name": "defense matrix", "ab-desc": "does things" }
-    ]
+    type: "Mobility Tank",
+    intro: "Playing DVA is all about map control, maintaining a safeback line and pushing back aggresion. Efficient use of the Defense Matrix is key. A common misconception is to play DVA by head hunting in the frontline trying to take out healers, when you should be covering your team with maxtrix and harassing attackers.",
+    quick_guide: ["DVAs Defense Matrix is her most important skill. Deny burst opponents and use it <b>efficiently</b>", "Make sure your not holding up defense matrix when there's nothing to block", "Your goal is to enforce a safe backline by catching enemy damage on your backline and harassing enemy aggression", "Matrixing allies instead of aiming Matrix at an opponent is a good way to completely block damage that could hit your team.", "DVA bomb requires awareness of enemy defenses and map position", "DVA's head hunting is needed to chase those who are jumping on your team, not to duke it out on the front line."]
 });
 console.log("added D.VA");
 tanks.push({
     id: "002",
     name: "Orisa",
-    type: "tank",
+    type: "Anchor Tank",
     intro: "Orisa serves as the central anchor of her team, and defends her teammates from the frontline with a protective barrier. She can attack from long range, fortify her own defenses, launch graviton charges to slow and move enemies, and deploy a Supercharger to boost the damage output of multiple allies at once.",
-    abilities: [{ "ab-id": "001", "ab-name": "n/a", "ab-desc": "does things" }]
+    quick_guide: ["m", "m", "m"]
 });
 console.log("added Orisa");
+tanks.push({
+    id: "003",
+    name: "Reinhardt",
+    type: "Anchor Tank",
+    intro: "Clad in powered armor and swinging his hammer, Reinhardt leads a rocket-propelled charge across the battleground and defends his squadmates with a massive energy barrier.",
+    quick_guide: ["m", "m", "m"]
+});
+console.log("added Rein");
+tanks.push({
+    id: "004",
+    name: "Road Hog",
+    type: "Brawler Tank",
+    intro: "Roadhog uses his signature Chain Hook to pull his enemies close before shredding them with blasts from his Scrap Gun. He’s hardy enough to withstand tremendous damage, and can recover his health with a short breather.",
+    quick_guide: ["m", "m", "m"]
+});
+console.log("added Hog");
+tanks.push({
+    id: "005",
+    name: "Winston",
+    type: "Mobility Tank",
+    intro: "Winston wields impressive inventions—a jump pack, electricity-blasting Tesla Cannon, portable shield projector and more—with literal gorilla strength.",
+    quick_guide: ["m", "m", "m"]
+});
+console.log("added Winston");
+tanks.push({
+    id: "006",
+    name: "Hammond (Wreaking Ball)",
+    type: "Mobility Tank",
+    intro: "Wrecking Ball rolls across the battlefield, using his arsenal of weapons and his mech’s powerful body to crush his enemies.",
+    quick_guide: ["m", "m", "m"]
+});
+console.log("added Hammond");
+tanks.push({
+    id: "007",
+    name: "Zarya",
+    type: "Brawler Tank",
+    intro: "Deploying powerful personal barriers that convert incoming damage into energy for her massive Particle Cannon, Zarya is an invaluable asset on the front lines of any battle.",
+    quick_guide: ["m", "m", "m"]
+});
+console.log("added Zarya");
 //When each array is loaded serveral things will happen
 //1. the name will be added to side-bar menu under the appropriate category e.g if obj[i].type="tank" then tank-drop.innerhtml += '<a href="#'+obj[i].name+'">'+obj[i].name+'</a>';
 function display() {
@@ -83,8 +121,12 @@ function display() {
             "'><td><section class='main-section'><h4>" +
             tank_item.name +
             "</h4><hr><div>" +
-            tank_item.intro +
-            "</div></section></td></tr>";
+            tank_item.intro;
+        html += "<p><h6>Quick Guide</h6><ol>"
+        for (var j = 0; j < tank_item.quick_guide.length; j++) {
+            html += "<li>" + tank_item.quick_guide[j] + "</li>";
+        }
+        html += "</ol></p></div></section></td></tr>";
         //will be adding more content soon
     }
     console.log(html);
