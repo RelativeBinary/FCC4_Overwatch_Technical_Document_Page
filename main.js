@@ -104,24 +104,160 @@ tanks.push({
     quick_guide: ["TBA", "TBA", "TBA"]
 });
 console.log("added Zarya");
+
+//offense
+var offense = [];
+offense.push({
+    id: "001",
+    name: "Ashe",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "002",
+    name: "Bastion",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "003",
+    name: "Doomfist",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "004",
+    name: "Genji",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "005",
+    name: "Hanzo",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "006",
+    name: "Junkrat",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "007",
+    name: "Mcree",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "008",
+    name: "Mei",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "009",
+    name: "Pharah",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "010",
+    name: "Reaper",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "011",
+    name: "Solider: 76",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "012",
+    name: "Sombra",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "013",
+    name: "Symmetra",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "014",
+    name: "Torbjorn",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "015",
+    name: "Tracer",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+offense.push({
+    id: "016",
+    name: "Widowmaker",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+
+var support = [];
+support.push({
+    id: "001",
+    name: "Ana",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+support.push({
+    id: "002",
+    name: "Brigitte",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+support.push({
+    id: "003",
+    name: "Lucio",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+support.push({
+    id: "003",
+    name: "Mercy",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+support.push({
+    id: "004",
+    name: "Moira",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
+support.push({
+    id: "005",
+    name: "Zenyatta",
+    intro: "TBA",
+    quick_guide: "TBA"
+});
 //When each array is loaded serveral things will happen
 //1. the name will be added to side-bar menu under the appropriate category e.g if obj[i].type="tank" then tank-drop.innerhtml += '<a href="#'+obj[i].name+'">'+obj[i].name+'</a>';
-function display_tank() {
+function display() {
     console.log("executing tanks display function");
     html = "";
-    var tank_sidebar = document.getElementById("tank-drop");
-    var tank_segment = document.getElementById("tank-results");
+    var sidebar = document.getElementById("tank-drop");
+    var segment = document.getElementById("tank-results");
     for (var i = 0; i < tanks.length; i++) {
         //adding to side bar
         var tank_item = tanks[i];
         html += '<a href="#' + tank_item.name + '">' + tank_item.name + "</a>";
     }
-    tank_sidebar.innerHTML = html;
+    sidebar.innerHTML = html;
     console.log("adding tank drop down options");
 
     //get current #tanks html content
-    html = tank_segment.innerHTML;
-    console.log(html);
+    html = segment.innerHTML;
     for (var i = 0; i < tanks.length; i++) {
         //adding to main content
         var tank_item = tanks[i];
@@ -139,8 +275,79 @@ function display_tank() {
         html += "</ol></p></div></section></td></tr>";
         //will be adding more content soon
     }
-    console.log(html);
-    tank_segment.innerHTML = html;
+    segment.innerHTML = html;
     console.log("adding tank content to tank results segment");
+
+    console.log("executing Offense display function")
+    html = "";
+
+    sidebar = document.getElementById("dps-drop");
+    segment = document.getElementById("offense-results");
+    //adding to the sidebar
+    for (var i = 0; i < offense.length; i++) {
+        var off_item = offense[i];
+        html += '<a href="#' + off_item.name + '">' + off_item.name + "</a>";
+    }
+    sidebar.innerHTML = html;
+    console.log("added offense hero's to list");
+
+    //get current #offense html content
+    html = segment.innerHTML;
+    for (var i = 0; i < offense.length; i++) {
+        //adding to main content
+        var off_item = offense[i];
+        html +=
+            "<tr id='" +
+            off_item.name +
+            "'><td><section class='main-section'><h4>" +
+            off_item.name +
+            "</h4><hr><div>" +
+            off_item.intro;
+        html += "<p><h6><b>Quick Guide</b></h6><ol>"
+        for (var j = 0; j < off_item.quick_guide.length; j++) {
+            html += "<li>" + off_item.quick_guide[j] + "</li>";
+        }
+        html += "</ol></p></div></section></td></tr>";
+        //will be adding more content soon
+    }
+    segment.innerHTML = html;
+    console.log("adding offense content to offense results segment");
+
+    console.log("executing support display function")
+    html = "";
+
+    sidebar = document.getElementById("sup-drop");
+    segment = document.getElementById("support-results");
+    //adding to the sidebar
+    for (var i = 0; i < support.length; i++) {
+        var off_item = support[i];
+        html += '<a href="#' + off_item.name + '">' + off_item.name + "</a>";
+    }
+    sidebar.innerHTML = html;
+    console.log("added offense hero's to list");
+
+    //get current #support html content
+    html = segment.innerHTML;
+    for (var i = 0; i < support.length; i++) {
+        //adding to main content
+        var supp_item = support[i];
+        html +=
+            "<tr id='" +
+            supp_item.name +
+            "'><td><section class='main-section'><h4>" +
+            supp_item.name +
+            "</h4><hr><div>" +
+            supp_item.intro;
+        html += "<p><h6><b>Quick Guide</b></h6><ol>"
+        for (var j = 0; j < supp_item.quick_guide.length; j++) {
+            html += "<li>" + supp_item.quick_guide[j] + "</li>";
+        }
+        html += "</ol></p></div></section></td></tr>";
+        //will be adding more content soon
+    }
+    segment.innerHTML = html;
+    console.log("adding offense content to offense results segment");
+
+    console.log("executing support display function")
     html = "";
 }

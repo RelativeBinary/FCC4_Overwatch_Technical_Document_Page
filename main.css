@@ -13,6 +13,13 @@ hr {
     width: 80%;
 }
 
+.outer-container {
+    /*Hiding the navbar scroll bar*/
+    border: 5px solid purple;
+    position: relative;
+    overflow: hidden;
+}
+
 #nav-bar {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     background-color: black;
@@ -20,7 +27,17 @@ hr {
     width: 240px;
     position: fixed;
     z-index: 1;
+    /*Hiding the navbar scroll bar*/
     color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#nav-bar::-webkit-scrollbar {
+    display: none;
 }
 
 #nav-bar h4 {
