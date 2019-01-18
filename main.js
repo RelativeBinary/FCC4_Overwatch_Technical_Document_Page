@@ -61,15 +61,15 @@ tanks.push({
     name: "Orisa",
     type: "Anchor Tank",
     intro: "Orisa serves as the central anchor of her team, and defends her teammates from the frontline with a protective barrier. She can attack from long range, fortify her own defenses, launch graviton charges to slow and move enemies, and deploy a Supercharger to boost the damage output of multiple allies at once.",
-    quick_guide: ["TBA", "TBA", "TBA"]
+    quick_guide: ["Orisa requires good aim", "Position yourself infront of your team as a defensive tank.", "You primarily want to force your opponent to shoot your shield.", "Don't leave yourself out in the open to be flanked.", "Stay with your team.", "Durring open fights weave between your shield to create cover"]
 });
 console.log("added Orisa");
 tanks.push({
     id: "003",
     name: "Reinhardt",
     type: "Anchor Tank",
-    intro: "Clad in powered armor and swinging his hammer, Reinhardt leads a rocket-propelled charge across the battleground and defends his squadmates with a massive energy barrier.",
-    quick_guide: ["TBA", "TBA", "TBA"]
+    intro: "Reinhardt is a defensive tank, which can create a safe space for allies as well as punish enemies which get too close. His low mobility requires strong positioning and ability manaagement skills to ensure surviavbility and long term effectiveness. Without good positioning and skill management you can find yourself constantly without a shield and dying out in the open by flankers and brawlers.",
+    quick_guide: ["Your team is relying on your shield to poke so be careful when you drop it.", "Charge requires team composition, enemy team observation and propper setup and positioning which makes it difficult to use. So don't use it unless your confident.", "Keep en eye on how often you keep your shield up. Be sure when to let it down and charge", "Save your ult to deny enemy ults or diffuse enemy pushes.", "Know when its safe to body block, so healers can charge their ults on you (preferrable early game you'd want healers to have their ults up).", "Durring brawls sperratically dropping shield and taking swings can stop your shield from going down too quickly, and also help diffuse the enemy attack.", "Your main source of ult charge is fire striking", "Make sure your actually shielding someone when your shield is up.", "When agaisnt another rein, knowing when he has ult, firestrike and barrier is key to abusing his cooldowns", "against snipers don't drop shield too often"]
 });
 console.log("added Rein");
 tanks.push({
@@ -77,7 +77,7 @@ tanks.push({
     name: "Road Hog",
     type: "Brawler Tank",
     intro: "Roadhog uses his signature Chain Hook to pull his enemies close before shredding them with blasts from his Scrap Gun. He’s hardy enough to withstand tremendous damage, and can recover his health with a short breather.",
-    quick_guide: ["TBA", "TBA", "TBA"]
+    quick_guide: ["Combo: Buck-shot (right-click), Hook, Shot-gun, Punch", "Using your alt fire before hooking as a good way to line up and aim your hook.", "Turing to the side after landing a hook can further displace your opponent putting them infront of your team or even off the edge of the map.", "Body shots on smaller targets will allow more of your bullets to hit, dealing more damage.", "Manage ammo propperly for your combo.", "Ulting is good to use post hook", "Flanking as hog can be good durring a fight to catch tunnel visioned enemy backlines.(warning flanking is only effective if you get several kills!)."]
 });
 console.log("added Hog");
 tanks.push({
@@ -85,15 +85,15 @@ tanks.push({
     name: "Winston",
     type: "Mobility Tank",
     intro: "Winston wields impressive inventions—a jump pack, electricity-blasting Tesla Cannon, portable shield projector and more—with literal gorilla strength.",
-    quick_guide: ["TBA", "TBA", "TBA"]
+    quick_guide: ["For oppenents with armor punching while zapping will help reduce their armor, without using up too much ammo", "Punching on  jump pack landing then zapping is a good way to get damage out on engage.", "You can use your jump pack to knock rod hogs who hook your team mates.", "Ideally engage with your bubble and weave between the barrier to avoid damage, before disengaging", "Never dive bastion, brig or other beefy brawlers alone.", "You want to use your primal rage to extent your life durring fights", "try to bait out any mobility abilities from opponents before leaping", "barrier can block all lucio AOE, zen ult, doomfist ult, brig passive, but not brig's AOE ult", "Bubble is key for denying ultimate damage.", ]
 });
 console.log("added Winston");
 tanks.push({
     id: "006",
     name: "Hammond (Wreaking Ball)",
     type: "Mobility Tank",
-    intro: "Wrecking Ball rolls across the battlefield, using his arsenal of weapons and his mech’s powerful body to crush his enemies.",
-    quick_guide: ["TBA", "TBA", "TBA"]
+    intro: "Hammond is a strong counter to the anchor style composition where the enemy is brawling and heavily grouped together. He requires a lot of skill due to his crowd control oriented play style which demands the proper use of mobility to displace the enemy.",
+    quick_guide: ["Hammond is about depositioning enemy tanks and diving with his mobility.", "Constantly CC'ing enemey tanks by swinging into them can allow your team to brawl with the enemy offensive", "Be aware of where your knocking your enemies as your may very well knock them closer to their targets", "Combo: swing hit up, pile driver down, pop shield and shoot.", "Hammonds guns have good range of the damage so you don't have to be so up close and personal.", "Mines should be placed on your team in a close quarters fight, on choke points and objective defense", "engagement"]
 });
 console.log("added Hammond");
 tanks.push({
@@ -101,7 +101,7 @@ tanks.push({
     name: "Zarya",
     type: "Brawler Tank",
     intro: "Deploying powerful personal barriers that convert incoming damage into energy for her massive Particle Cannon, Zarya is an invaluable asset on the front lines of any battle.",
-    quick_guide: ["TBA", "TBA", "TBA"]
+    quick_guide: ["Tight spaces and choke points are where zarya excels at, as the enemy is forced onto her laser", "Bubble management is extrememly important, enabling offensive, protecting allies", "Getting charge fast can be done by forcing your enemy to shoot at you by stepping into their line of sight and bubbling allies which are brawling like reinhardt", "maintain bubble protection when your back line is under attack or when an enemy offensive is commiting ability resources to secure a kill.", "offensive bubbling is protecting an ulting offensive ally", "beam requires high tracking skill, right click can provide a high level of grav charge", "using grav at points where enemies funnel into a certain place in the map", "if the enemy team likes to split don't wait for when they decide to group, graving can be good for securing enemy supports."]
 });
 console.log("added Zarya");
 
